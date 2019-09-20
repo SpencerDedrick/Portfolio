@@ -1,23 +1,194 @@
+/*
+#5680E9
+#84CEEB
+#5AB9EA
+#C1C8E4
+#8860D0
+#00D699
+#4E01FC
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-}
-h1 {
-  color: white;
-  font-family: sans-serif;
-  font-size: 100px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  background-color: lightgrey;
 }
 
-h1:hover {
-  color: slateblue;
+.page-wrapper {
+  width: 60vw;
+  margin: auto;
+  background-color: rgba(255, 243, 254, 0.7);
+  border-radius: 5px;
+  bottom: 5vh;
+  box-shadow: 5px 10px 10px gray;
+  margin-top: 50px;
+}
+
+/*Nav Bar Styles*/
+nav {
+  width: 100vw;
+  margin-top: 20px;
+  background: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #0073f5;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.nav-links {
+  color: #5680e9;
+  font-size: 1.5rem;
+}
+
+.web-links {
+  color: #5680e9;
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+
+.navbar a:hover {
+  color: #8260f2;
+}
+
+/*Landing Styles*/
+.landing {
+  width: 100%;
+  display: flex;
+}
+
+.landing div {
+  display: block;
+  width: 100%;
+}
+
+.landing p {
+  font-size: 30px;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+}
+
+/*Other styles*/
+
+.about-wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
+  color: #0073f5;
+}
+
+h2 {
+  color: #00d699;
+}
+
+#skills-abilities i {
+  font-size: 5rem;
+  padding: 20px;
+}
+/*Icon badges coloring*/
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #0170ba;
+}
+
+.fa-js-square {
+  color: #f7df1e;
+}
+
+.fa-bootstrap {
+  color: #563d7c;
+}
+
+.fa-react {
+  color: #61dbfb;
+}
+
+.fa-node-js {
+  color: #669f64;
+}
+
+/*Projects Styles*/
+
+#projects {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.project-container img {
+  width: 300px;
+}
+
+.project-container div {
+  width: 30%;
+}
+
+.project-container i {
+  font-size: 2rem;
+}
+
+.project-container a {
+  color: #8860d0;
+  padding: 10px;
+}
+.project-container a:hover {
+  color: #c1c8e4;
+  padding: 10px;
+}
+
+.powered-by {
+  margin: auto;
+  text-align: center;
+}
+
+.powered-by i {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.project-links {
+  margin: auto;
+  text-align: center;
+}
+.project-links div {
+  display: flex;
+}
+/*Misc Styles*/
+hr {
+  margin: auto;
+  width: 90%;
 }
