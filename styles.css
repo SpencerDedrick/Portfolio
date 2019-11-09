@@ -1,123 +1,153 @@
-/*
-#5680E9
-#84CEEB
-#5AB9EA
-#C1C8E4
-#8860D0
-#00D699
-#4E01FC
-*/
-
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  background-color: lightgrey;
-}
-
-.page-wrapper {
-  width: 60vw;
-  margin: auto;
-  background-color: rgba(255, 243, 254, 0.7);
-  border-radius: 5px;
-  bottom: 5vh;
-  box-shadow: 5px 10px 10px gray;
-  margin-top: 50px;
-}
-
-/*Nav Bar Styles*/
-nav {
-  width: 100vw;
-  margin-top: 20px;
-  background: none;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: teal;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
 }
 
-nav a {
-  color: #0073f5;
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 5px;
+.grayPanel {
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-.nav-links {
-  color: #5680e9;
-  font-size: 1.5rem;
+.grayPanelInverse {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#startButton:hover,
+.icon:hover {
+  cursor: pointer;
 }
 
-.web-links {
-  color: #5680e9;
-  font-size: 1.5rem;
-  margin-right: 50px;
+/* Toolbar Styles */
+#toolbar {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  padding: 2px;
 }
 
-.navbar a:hover {
-  color: #8260f2;
+#startButton {
+  padding: 2px 5px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-/*Landing Styles*/
-.landing {
-  width: 100%;
-  display: flex;
+.startButtonFocused {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  outline: none;
 }
 
-.landing div {
-  display: block;
-  width: 100%;
+#startButton i {
+  padding: 0px 5px;
+  font-weight: normal;
 }
 
-.landing p {
-  font-size: 30px;
-  color: black;
-  font-family: "Roboto Mono", monospace;
+#systemTray {
+  float: right;
+  padding: 0px 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-/*Other styles*/
-
-.about-wrapper {
-  display: flex;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+/* Desktop Icon Styles */
+.icon {
+  margin: 10px 10px;
+  float: left;
+  padding: 10px;
   text-align: center;
-  padding: 20px;
+}
+.icon i {
+  text-shadow: 2px 2px 1px black;
+  color: white;
+  font-size: 50px;
+}
+.icon h6 {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-shadow: 1px 1px 1px black;
 }
 
-p {
-  text-align: justify;
-  padding: 20px;
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+/* Pop up Panel Styles */
+.panel {
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+  width: 800px;
+  height: 600px;
+  box-shadow: 5px 5px 10px black;
 }
 
-h1 {
-  margin-top: 40px;
-  color: #0073f5;
+.panelHeader {
+  background: linear-gradient(to right, #000184 40%, #0f80cd);
+  color: white;
+  padding: 5px 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
 }
 
-h2 {
-  color: #00d699;
+.panelHeader h1 {
+  font-size: 14px;
 }
 
-#skills-abilities i {
-  font-size: 5rem;
-  padding: 20px;
+.xButton {
+  padding: 0px 3px;
 }
-/*Icon badges coloring*/
+
+.panelWhite {
+  background: white;
+  margin: 3px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  box-shadow: 1px 1px 0px black;
+}
+
+/* Individual Panel Styles */
+#userInfoPanel {
+  /* display: none; */
+}
+
+#userInfoPanel img {
+  margin: 3px;
+  height: 150px;
+  float: left;
+  box-shadow: 1px 1px 0px black;
+}
+
+#userInfoPanel h2 {
+  display: inline;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#skills i {
+  font-size: 40px;
+}
+
 .fa-html5 {
   color: #e34c26;
 }
@@ -126,69 +156,14 @@ h2 {
   color: #0170ba;
 }
 
-.fa-js-square {
+.fa-js {
   color: #f7df1e;
 }
 
-.fa-bootstrap {
-  color: #563d7c;
+.fa-smile {
+  color: #15cf2e;
 }
 
-.fa-react {
-  color: #61dbfb;
-}
-
-.fa-node-js {
-  color: #669f64;
-}
-
-/*Projects Styles*/
-
-#projects {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  padding: 20px;
-}
-.project-container img {
-  width: 300px;
-}
-
-.project-container div {
-  width: 30%;
-}
-
-.project-container i {
-  font-size: 2rem;
-}
-
-.project-container a {
-  color: #8860d0;
-  padding: 10px;
-}
-.project-container a:hover {
-  color: #c1c8e4;
-  padding: 10px;
-}
-
-.powered-by {
-  margin: auto;
-  text-align: center;
-}
-
-.powered-by i {
-  font-size: 2rem;
-  margin-top: 10px;
-}
-.project-links {
-  margin: auto;
-  text-align: center;
-}
-.project-links div {
-  display: flex;
-}
-/*Misc Styles*/
-hr {
-  margin: auto;
-  width: 90%;
+.fa-desktop {
+  color: black;
 }

@@ -2,189 +2,169 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Spencer Dedrick's Portfolio</title>
+    <title>Spencer Dedrick Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="nav-links">
-        <a href="">about</a>/ <a href="#projects">projects</a>/
-        <a href="">contact</a>/
+    <!-- Main Desktop Area -->
+    <main>
+      <div class="icon" id="userInfoIcon">
+        <i class="fas fa-user-tie"></i>
+        <h6>User Info</h6>
       </div>
 
-      <div class="web-links">
-        <a href=""
-          ><a href="https://github.com/SpencerDedrick" target="_blank"
-            ><i class="fab fa-github"></i></a></a
-        >/
-        <a href="https://www.linkedin.com/in/spencer-dedrick-b777a9192/"
-          ><i class="fab fa-linkedin-in"></i></a
-        >/
-        <a href=""><i class="far fa-file"></i></a>
+      <div class="icon" id="projectsIcon">
+        <i class="fas fa-folder"></i>
+        <h6>Projects</h6>
       </div>
-    </nav>
-    <!-- MAIN CONTENT -->
-    <div class="page-wrapper">
-      <div class="landing">
-        <div>
-          <h1>
-            Hello, my Name is Spencer
-          </h1>
+
+      <div class="icon" id="contactMeIcon">
+        <i class="fas fa-phone"></i>
+        <h6>Contact Me</h6>
+      </div>
+
+      <!-- Pop up Panels -->
+      <div class="panel grayPanel" id="userInfoPanel">
+        <div class="panelHeader">
+          <h1>User Info</h1>
+          <button class="grayPanel xButton">X</button>
+        </div>
+
+        <div class="panelWhite">
+          <div id="aboutMe">
+            <img
+              src="imgs/Dotted Halftone Portrait.png"
+              alt="ME!"
+              class="grayPanelInverse"
+            />
+            <div>
+              <h2>Username:</h2>
+              <h2>Spencer Dedrick</h2>
+            </div>
+            <br />
+            <div>
+              <h2>About Me:</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nesciunt fugit natus tempore dolor sapiente corrupti vero nemo
+                temporibus cum at voluptas, architecto quaerat incidunt numquam
+                omnis magnam? Nisi, dolorum deserunt!
+              </p>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div><h2>Skills & Abilities:</h2></div>
+          <div id="skills">
+            <div>
+              <i class="fab fa-html5"></i>
+              <h3>HTML5 <br>1 Year</h3> 
+            </div>
+            <div>
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS <br>1 Year</h3>
+            </div>
+            <div>
+              <i class="fab fa-js"></i>
+              <h3>JS <br>1 Year</h3>
+            </div>
+            <div>
+              <i class="fas fa-smile"></i>
+              <h3>Customer Service <br />10 Years</h3>
+            </div>
+            <div>
+              <i class="fas fa-desktop"></i>
+              <h3>
+                Computer Hardware<br />
+                7 Years
+              </h3>
+            </div>
+          </div>
+          <div class="panel grayPanel" id="userInfoPanel">
+            <div class="panelHeader">
+              <h1>Contact Me</h1>
+              <button class="grayPanel xButton">X</button>
+            </div>
+    
+            <div class="panelWhite">
+              <div id="contactMe">
+                <div>
+                  <h2>Username:</h2>
+                  <h2>Spencer Dedrick</h2>
+                </div>
+                <br />
+                <div>
+                  <h2>Phone:</h2>
+                  <p>
+                    210-204-7760
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h2>E-Mail:</h2>
+                <p>
+                  spencer.dedrick@gmail.com
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>LinkedIn:</h2>
+              <p>
+                https://www.linkedin.com/in/spencer-dedrick/
+              </p>
+            </div>
+          </div>
+          <div>
+            <h2>GitHub:</h2>
+            <p>
+              https://github.com/SpencerDedrick
+            </p>
+          </div>
+        </div>
+          <div>
+            <h2>Portfolio:</h2>
+            <p>
+              https://spencerdedrick.github.io/Portfolio/
+            </p>
+          </div>
+        </div>
+              
+        </div>
+      </div>
+      <div class="panel grayPanel">
+        <div class="panelHeader">
+          <h1>Panel Title</h1>
+          <button class="grayPanel xButton">X</button>
+        </div>
+        <div class="panelWhite">
           <p>
-            I am an aspiring web developer and programmer. I have a passion for
-            technology, and I love helping others. I strive to make any team I'm
-            a part of the best it can be. I love to learn and I look forward to
-            working with you in the future.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+            fugit natus tempore dolor sapiente corrupti vero nemo temporibus cum
+            at voluptas, architecto quaerat incidunt numquam omnis magnam? Nisi,
+            dolorum deserunt!
           </p>
         </div>
-        <img src="" alt="" />
       </div>
+    </main>
 
-      <div id="skills-abilities">
-        <h1>Web-Dev Essentials</h1>
-        <div class="container" id="languages">
-          <div>
-            <h2>HTML5</h2>
-            <i class="fab fa-html5"></i>
-            <p>
-              I started my journey in web development as many do with HTML. I
-              completed the Free Code Camp Responsive Web Design Certification
-              in November of 2018. Since then I have continued to develop and
-              push my skills further.
-            </p>
-          </div>
-          <div>
-            <h2>CSS3</h2>
-            <i class="fab fa-css3-alt"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolores minima accusamus esse suscipit autem ab veritatis
-              molestiae repudiandae voluptas dolor hic quam, facilis laboriosam
-              molestias, quas consequuntur, doloribus saepe.
-            </p>
-          </div>
-          <div>
-            <h2>JavaScript</h2>
-            <i class="fab fa-js-square"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolores minima accusamus esse suscipit autem ab veritatis
-              molestiae repudiandae voluptas dolor hic quam, facilis laboriosam
-              molestias, quas consequuntur, doloribus saepe.
-            </p>
-          </div>
-        </div>
-        <hr />
-        <h1>Frameworks and Tool-sets</h1>
-        <div class="container" id="frameworks">
-          <div>
-            <h2>Bootstrap</h2>
-            <i class="fab fa-bootstrap"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolores minima accusamus esse suscipit autem ab veritatis
-              molestiae repudiandae voluptas dolor hic quam, facilis laboriosam
-              molestias, quas consequuntur, doloribus saepe.
-            </p>
-          </div>
-          <div>
-            <h2>React</h2>
-            <i class="fab fa-react"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolores minima accusamus esse suscipit autem ab veritatis
-              molestiae repudiandae voluptas dolor hic quam, facilis laboriosam
-              molestias, quas consequuntur, doloribus saepe.
-            </p>
-          </div>
-          <div>
-            <h2>Node.JS</h2>
-            <i class="fab fa-node-js"></i>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolores minima accusamus esse suscipit autem ab veritatis
-              molestiae repudiandae voluptas dolor hic quam, facilis laboriosam
-              molestias, quas consequuntur, doloribus saepe.
-            </p>
-          </div>
-        </div>
+    <!-- Toolbar and Start Menu -->
+    <footer class="grayPanel" id="toolbar">
+      <button class="grayPanel" id="startButton">
+        <i class="fab fa-windows"></i>Start
+      </button>
+      <div class="grayPanelInverse" id="systemTray">
+        <div id="systemClock"></div>
       </div>
-      <hr />
-      <h1>Projects</h1>
-      <div id="projects">
-        <div class="project-container">
-          <h2>Dice Calculator</h2>
-          <img src="/imgs/DiceCalculatorThumbnail.png" alt="" />
-          <p>A simple "Calculator" app for rolling dice.</p>
-          <div class="project-links">
-            <h3>Check it out!</h3>
-            <div>
-              <a href="https://spencerdedrick.github.io/DiceCalculator/"
-                ><i class="fas fa-globe-americas"></i
-              ></a>
-              <a href="https://github.com/SpencerDedrick/DiceCalculator"
-                ><i i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="powered-by">
-            <h3>Powered By:</h3>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
-          </div>
-        </div>
-        <div class="project-container">
-          <h2>Responsive Design Site</h2>
-          <img src="/imgs/ResponsiveDesign Thumbnail.png" alt="" />
-          <p>This is a site made using the Bootstrap Framework.</p>
-          <div class="project-links">
-            <h3>Check it out!</h3>
-            <div>
-              <a href="https://spencerdedrick.github.io/ResponsiveDesign/"
-                ><i class="fas fa-globe-americas"></i
-              ></a>
-              <a href="https://github.com/SpencerDedrick/ResponsiveDesign"
-                ><i i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-          <div class="powered-by">
-            <h3>Powered By:</h3>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
-            <i class="fab fa-bootstrap"></i>
-          </div>
-        </div>
-        <div class="project-container">
-          <h2>App Name Here</h2>
-          <img
-            src="https://images.unsplash.com/photo-1533022139390-e31c488d69e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
-            alt=""
-          />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="project-links">
-            <h3>Check it out!</h3>
-            <div>
-              <a href=""><i class="fas fa-globe-americas"></i></a>
-              <a href=""><i i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="powered-by">
-            <h3>Powered By:</h3>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://kit.fontawesome.com/c5da040612.js"></script>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c5da040612.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
